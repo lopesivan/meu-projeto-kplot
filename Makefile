@@ -76,7 +76,7 @@ run:
 view:
 	@if [ -f "$(SVG)" ]; then \
 		echo "$(CYAN)>>> 📈 Abrindo $(SVG)$(NC)"; \
-		xdg-open $(SVG) || echo "$(YELLOW)xdg-open falhou – abra $(SVG) manualmente$(NC)"; \
+		eog $(SVG) || echo "$(YELLOW)eog falhou – abra $(SVG) manualmente$(NC)"; \
 	else \
 		echo "$(YELLOW)⚠  $(SVG) não encontrado. Execute 'make run' primeiro.$(NC)"; \
 	fi
